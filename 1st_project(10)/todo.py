@@ -5,7 +5,6 @@ import pickle
 root = tkinter.Tk()
 root.title("To-Do list by @aditya")
 
-
 def add_task():
     task = entry_field.get()
     if task != "":
@@ -14,14 +13,12 @@ def add_task():
     else:
         tkinter.messagebox.showwarning(title="Warning!", message="You must enter a task.")
 
-
 def remo_task():
     try:
         task_index = listbox_task.curselection()[0]
         listbox_task.delete(task_index)
     except:
         tkinter.messagebox.showwarning(title="Warning!", message="You must select a task.")
-
 
 def load_list():
     try:
@@ -31,7 +28,6 @@ def load_list():
             listbox_task.insert(tkinter.END, task)
     except:
         tkinter.messagebox.showwarning(title="Warning!", message="Cannot find the file.")
-
 
 def save_list():
     tasks = listbox_task.get(0, listbox_task.size())
