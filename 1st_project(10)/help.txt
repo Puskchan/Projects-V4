@@ -1,2 +1,0 @@
-I've used tkinter and python to build this app. Took help from different sites and a youtube video.
-I will put more of the same project in near future but in different languages.
